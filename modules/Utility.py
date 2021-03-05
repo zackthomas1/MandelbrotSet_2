@@ -1,11 +1,5 @@
 import math, logging
 
-#Sets up logging
-logging.basicConfig(level=logging.DEBUG, format='\t%(asctime)s.%(msecs)03d: %(message)s', datefmt='%H:%M:%S')
-#logging.disable(logging.ERROR) # uncomment to block debug logging.debug messages
-logging.disable(logging.DEBUG) # uncomment to block debug logging.debug messages
-#logging.disable(logging.INFO) # uncomment to block debug logging.info messages and below
-
 class Utility():
     def __init__(self):
         pass 
