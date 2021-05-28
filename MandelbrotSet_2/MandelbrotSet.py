@@ -1,10 +1,12 @@
 import logging, math
 
-from modules.Utility import Utility
-from modules.Color3f import Color3f
-from modules.CanvasImage import CanvasImage
+from MandelbrotSet_2.Utility import Utility
+from MandelbrotSet_2.Color3f import Color3f
+from MandelbrotSet_2.CanvasImage import CanvasImage
 
 class MandelbrotSet():
+    """ """ 
+    
     def __init__(self, canvas_width = 350, canvas_height = 200, max_iteration = 1000):
 
         # Class Variables

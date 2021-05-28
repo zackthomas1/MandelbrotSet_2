@@ -1,6 +1,11 @@
-import os, logging
-from modules.MandelbrotSet import MandelbrotSet
-from modules.Color3f import Color3f
+import os, logging, sys
+
+PACKAGE_PARENT = '..'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+
+from MandelbrotSet_2.MandelbrotSet import MandelbrotSet
+from MandelbrotSet_2.Color3f import Color3f
 
 #Sets up logging
 logging.basicConfig(level=logging.DEBUG, format='\t%(asctime)s.%(msecs)03d: %(message)s', datefmt='%H:%M:%S')
@@ -26,7 +31,7 @@ class Main():
         
         # Save Path
         relative_dir = os.path.dirname(__file__)
-        output_dir = os.path.join(relative_dir, "__render__\\")
+        output_dir = os.path.join(relative_dir, "__renders__\\")
 
         # save image
         mandelbrot.canvas.save_image(output_dir, version_number=12)

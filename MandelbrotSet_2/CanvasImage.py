@@ -1,10 +1,12 @@
 import os, logging
 from PIL import Image, ImageDraw
 
-from modules.Utility import Utility
-from modules.Color3f import Color3f
+from MandelbrotSet_2.Utility import Utility
+from MandelbrotSet_2.Color3f import Color3f
 
 class CanvasImage():
+    """ """ 
+    
     def __init__(self, canvas_width, canvas_height, background_color = 'black'):
 
         # Class Variables

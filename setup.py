@@ -4,6 +4,7 @@ except ImportError:
     from distutils.core import setup
 
 config = {
+    'name' : 'Mandelbrot Set Viewer',
     'description' : 'Mandelbrot Set Viewer',
     'author' : 'Zach THomsd',
     'url' : 'URL to get it at.',
@@ -11,9 +12,8 @@ config = {
     'author_email' : 'My Email',
     'version' : '0.1',
     'install_requires' : ['Pyside2'],
-    'packages' : ['NAME'],
+    'packages' : ['MandelbrotSet_2'],
     'scripts' : [],
-    'name' : 'Mandelbrot Set Viewer'
-}
+    }
 
-set(**config)
+setup(**config)

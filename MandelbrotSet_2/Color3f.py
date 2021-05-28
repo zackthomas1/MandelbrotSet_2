@@ -1,7 +1,9 @@
 import math, logging
-from modules.Utility import Utility
+from MandelbrotSet_2.Utility import Utility
 
 class Color3f():
+    """ """
+    
     def __init__(self, red:int = 0, green:int = 0, blue:int = 0):
         
         # Class variables
